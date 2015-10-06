@@ -13,4 +13,5 @@ Installation :
 - Utiliser la commande  gradle build  pour compiler le projet
 - Utiliser la commande  gradle eclipse  pour convertir le projet Gradle en projet Eclipse
 - Importer le projet sous Eclipse : File -> Import -> Existing project into workspace
-- Ajouter Apache/Tomcat à Eclipse : 
+- Ajouter Apache/Tomcat à Eclipse : Windows -> preferences -> Server -> Runtime Environment -> Add -> Apache Tomcat 7 -> next -> brower vers le dossier où est Apache/Tomcat
+- Démarrage : clic droit sur projet 
