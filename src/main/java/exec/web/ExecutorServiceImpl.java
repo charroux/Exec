@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -40,8 +41,8 @@ public class ExecutorServiceImpl implements ExecutorService{
 	@RequestMapping(value = "/code/{codeId}", method = RequestMethod.GET)
 	@ResponseStatus(HttpStatus.OK)
 	@ResponseBody
-	public CodeDTO getCode(long codeId) throws Exception {
-		return codes.get(0);
+	public CodeDTO getCode(@PathVariable("codeId") int codeId) throws Exception {
+		return codes.get(codeId);
 	}
 
 }

@@ -32,6 +32,6 @@ public interface ExecutorService {
 	@RequestMapping(value = "/code/{codeId}", method = RequestMethod.GET)
 	@ResponseStatus(HttpStatus.OK)
 	@ResponseBody
-	public CodeDTO getCode(@PathVariable("codeId") long codeId) throws Exception;
+	public CodeDTO getCode(@PathVariable("codeId") int codeId) throws Exception;
 	
 }
